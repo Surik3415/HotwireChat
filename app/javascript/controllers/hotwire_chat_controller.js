@@ -5,6 +5,7 @@ export default class extends Controller {
   connect() {
     this.subscribe()
     this.scrollMessages()
+    clearInput()
   }
 
   subscribe() {
