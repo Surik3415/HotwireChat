@@ -6,5 +6,5 @@ class Message < ApplicationRecord
   belongs_to :room
 
   scope :sorted, -> { order(:id) }
-  validates :body, presents: true
+  validates :body, presence: true
 end
