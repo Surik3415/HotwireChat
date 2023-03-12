@@ -4,5 +4,5 @@
 
 import { application } from "./application"
 
-import HelloController from "./hello_controller"
-application.register("hello", HelloController)
+import HotwireChatController from "./hotwire_chat_controller"
+application.register("hotwire_chat", HotwireChat)

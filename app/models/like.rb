@@ -2,5 +2,5 @@
 
 class Like < ApplicationRecord
   belongs_to :user
-  belongs_to :message, couter_cache: true
+  belongs_to :message, counter_cache: true
 end

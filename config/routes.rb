@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   resources :rooms, only: %i[show create], param: :title
-  resources :messages, only: %i[create]
+  resources :messages, only: :create do
+    member { post :like }
+  end
   root 'rooms#index'
 end
