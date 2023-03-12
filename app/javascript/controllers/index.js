@@ -5,4 +5,4 @@
 import { application } from "./application"
 
 import HotwireChatController from "./hotwire_chat_controller"
-application.register("hotwire_chat", HotwireChat)
+application.register("hotwire_chat", HotwireChatController)
